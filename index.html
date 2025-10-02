@@ -1,304 +1,187 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Personal Website</title>
-  </head>
-  <body  class="relative dark:bg-gray-800 dark:text-white">
-    <!--Navigation bar-->
-    <header class="px-4 pt-2 md:pt-4 sticky top-0 z-20 bg-white dark:bg-gray-800 m- ">
-      <div class="flex justify-between">
-        <div class="w-16 h-16 "><img class="rounded-full" src="images/code.png" alt=""></div>
-        <!--navigation bar of the tablet and the laptop-->
-        <div class="text-2xl font-serif text-[#060f32] dark:text-white hidden md:flex gap-4 lg:gap-12 self-center">
-          <p class="hover:underline hover:text-orange-700 decoration-2 decoration-orange-700 underline-offset-8"><a href="">Home</a></p>
-          <p class="hover:underline hover:text-orange-700 decoration-2 decoration-orange-700 underline-offset-8"><a href="">About</a></p>
-          <div class="group relative">
-            <p  class="hover:text-orange-700"><a href="">Members <i class="fa-solid fa-angle-down"></i></a></p>
-            <div class="hidden p-4 absolute -left-20 -right-20 top-8 group-hover:flex flex-col gap-4 bg-white ">
-              <div class="flex gap-2">
-                <div class="w-12 h-12"><img class="rounded-full" src="images/Evariste.jpg" alt=""></div>
-                <p class="text-lg self-center">Evariste Nkurunziza</p>
-              </div>
-              <div class="flex gap-2">
-                <div class="w-12 h-12 rounded-full"><img class="rounded-full h-full" src="images/cep.jpg" alt=""></div>
-                <p class="text-lg self-center">Niyongabo Kenny Bonheur</p>
-              </div>
-              <div class="flex gap-2">
-                <div class="w-12 h-12 rounded-full"><img class="rounded-full w-full h-full" src="images/cn.jpg" alt=""></div>
-                <p class="text-lg self-center">Cynthia Umubyeyi</p>
-              </div>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body class="dark:bg-gray-900">
+   <div>
+        <div class="bg-gray-300 h-16 flex  justify-between items-center pl-8">
+          <div><p class="text-2xl font-semibold font-serif text-blue-950">Portifolio</p></div>
+          <div class="hidden lg:flex justify-end items-center mr-8 gap-10 text-blue-950 font-serif font-semibold">
+                <p class="hover:underline md:text-xl"><a href="#About">About</a></p>
+                <p class="hover:underline md:text-xl"><a href="#Skills">Skills</a></p>
+                <p class="hover:underline md:text-xl"><a href="#Hobbies">Hobbies</a></p>
+                <p class="hover:underline md:text-xl"><a href="#Technologies">Technologies</a></p>
+                <p id="dark"><i class="fa-solid fa-moon md:text-xl"></i></p>
           </div>
-          <div class="group relative">
-            <p class="hover:text-orange-700"><a href="">Profiles <i class="fa-solid fa-angle-down"></i></a></p>
-            <div class="hidden group-hover:flex absolute flex-col gap-2 right-0 bg-white p-4">
-              <div class="flex gap-2">
-                <div class="w-12 h-12"><img class="rounded-full" src="images/Evariste.jpg" alt=""></div>
-                <div class=" w-52 h-10 hover:bg-[#060f32] hover:text-white transition duration-500 ease-in-out flex justify-center rounded-full group "><button>View Portifolio <i class="fa-solid fa-arrow-right"></i></button></div>
-
-              </div>
-              <div class="flex gap-2">
-                <div class="w-12 h-12"><img class="rounded-full h-full" src="images/cep.jpg" alt=""></div>
-                <div class=" w-52 h-10 hover:bg-[#060f32] hover:text-white transition duration-500 ease-in-out flex justify-center rounded-full group "><button>View Portifolio <i class="fa-solid fa-arrow-right"></i> </button></div>
-              </div>
-              <div class="flex gap-2">
-                <div class="w-12 h-12 rounded-full"><img class="rounded-full w-full h-full" src="images/cn.jpg" alt=""></div>
-                <div class=" w-52 h-10 hover:bg-[#060f32] hover:text-white transition duration-500 ease-in-out flex justify-center rounded-full group "><button>View Portifolio <i class="fa-solid fa-arrow-right"></i> </button></div>
-
-              </div>
+          <label class="lg:hidden">
+            <input type="checkbox" class="peer hidden">
+            <i class="fa-solid fa-bars text-3xl text-blue-950 pr-8 "></i>
+            <div class="hidden absolute peer-checked:flex top-0 right-0 bg-gray-300 pt-2 h-72 md:h-96 md:w-72 w-64 flex-col justify-start font-bold text-blue-950 pl-14 gap-4 md:gap-8 text-xl">
+                <p class="text-right pr-8  text-3xl"><i class="fa-solid fa-xmark "></i></p>
+                <p class="pt-4 hover:underline md:text-3xl">About</p>
+                <p class="hover:underline md:text-3xl">Skills</p>
+                <p class="hover:underline md:text-3xl">Hobbies</p>
+                <p><i class="fa-solid fa-moon md:text-3xl"></i></p>
             </div>
-          </div>
-          <div id="dark"><p><i class="fa-solid fa-moon"></i></p></div>
+          </label>  
         </div>
-        <!--header content of the small screen and phones-->
-        <div class="md:hidden text-[#060f32] self-center">
-          <div id="open" ><p class="text-3xl flex justify-end"><i class="fa-solid fa-bars"></i></p></div>
-        </div>
-      </div>
-    </header>
-    <div id="menu" class="hidden absolute bg-[#060f32] z-20 top-0 bottom-0 right-0 left-0 bg-opacity-90">
-            <div class=" sticky top-20 mx-10 bg-white dark:bg-gray-700">
-              <ul class="text-4xl font-serif flex flex-col gap-6 items-center ">
-                <li class="hover:underline hover:text-orange-700 decoration-2 decoration-orange-700 underline-offset-8"><a href=""></a>Home</li>
-                <li class="hover:underline hover:text-orange-700 decoration-2 decoration-orange-700 underline-offset-8"><a href=""></a>About</li>
-                <li class="hover:underline hover:text-orange-700 decoration-2 decoration-orange-700 underline-offset-8"><a href=""></a>Members</li>
-                <li class="hover:underline hover:text-orange-700 decoration-2 decoration-orange-700 underline-offset-8"><a href=""></a>Profiles</li>
-                <li id="fd"><a href=""></a>Dark</li>
-              </ul>
-              <div id="close" class="hidden absolute top-2 right-4 "><p class="text-3xl"><i class="fa-solid fa-x"></i></p></div>
+        <div id="About" class="z-0 lg:flex lg:gap-6 lg:mx-5 lg:justify-between lg:items-center">
+            <div class="flex flex-col gap-4  dark:bg-gray-700  mt-8 mx-6 lg:w-[600px] dark:shadow-md dark:shadow-gray-50 lg:shadow-gray-400 lg:bg-gray-100  lg:shadow-2xl lg:py-6 lg:px-6 lg:rounded-3xl">
+                <p class="text-3xl font-semibold text-blue-950">Hello, you just met Cynthia Umubyeyi!</p>
+                <p  class="text-gray-800 dark:text-gray-900 text-[18px] dark:font-serif">I am a junior developer with a curious mind, currently shaping code and dreams at the <span class="font-bold text-blue-950"> University of Rwanda</span>. Half student, half problem-solver, I speak fluent C, Java, and “why-is-this-bug-here.” Always learning, always building, I am proof that every great developer starts with a curious line of code.</p>
             </div>
-    </div>
-    <main>
-      <div style="background-image: url('images/bg.png');" class="bg-[url('images/bg.png')] bg-cover bg-no-repeat">
-        <div class="text-white px-4 py-8 text-xl flex flex-col items-center gap-8">
-          <div class="flex flex-col items-center gap-4">
-            <p class="text-5xl bg-blue-600 bg-opacity-30 h-20 w-20 flex justify-center items-center rounded-full"><i class="fa-solid fa-code"></i></p>
-            <p class="text-3xl">SOFTWARE DEVELOPERS</p>
-            <p class="opacity-80 lg:w-1/2">We are a collective of passionate software developers, designers, and innovators
-             dedicated to building exceptional digital experiences that make a difference.</p>
-          </div>
-          <div class="flex gap-12 lg:gap-24">
-            <div class="flex flex-col items-center gap-1">
-              <div class="">
-                <p class="text-6xl opacity-80"><i class="fa-solid fa-user-group"></i></p>
-              </div>
-              <div class="flex text-3xl gap-2 ">
-                <p class=" text-white">3</p>
-                <p>Members</p>
-              </div>
-              
-            </div>
-            <div class="flex flex-col items-center">
-              <div class="">
-                <p class="text-6xl opacity-80"><i class="fa-solid fa-code"></i></p>
-              </div>
-              <div class="flex text-3xl gap-2 ">
-                <p class=" text-white">7+</p>
-                <p>Projects</p>
-              </div>
-          </div>
-        </div>
-        <div class="w-44 h-12 text-2xl font-serif text-[#060f32] bg-white flex justify-center rounded-full"><button>Explore More</button></div>
-        
-      </div>
-      </div>
-      <!--profile section-->
-      <section class="mb-20">
-        <div class="m-6 lg:m-8 lg:mt-16 md:mx-16 flex flex-col xl:flex-row gap-12 lg:gap-4">
-          <div class="border-[1px] border-slate-100 p-4 group shadow-cyn hover:border-gray-400 hover:scale-105 transition duration-1000 ease-in-out rounded-lg md:px-20 lg:px-4">
-            <div class="flex flex-col gap-2 items-center ">
-              <div class="w-32 h-32 overflow-hidden rounded-full"><img class="rounded-full group-hover:scale-110 transition duration-1000 ease-in-out " src="images/Evariste.jpg" alt=""></div>
-              <p class="text-2xl text-[#060f32] group-hover:text-blue-500 group-hover:scale-110 transition duration-1000 ease-in-out dark:text-white ">Evariste Nkurunziza</p>
-              <p class="text-xl font-serif group-hover:scale-110 transition duration-1000 ease-in-out ">Software developer</p>
-            </div>
-            <div class="flex flex-col items-center gap-4 group-hover:scale-105 transition duration-1000 ease-in-out ">
-              <div class="">
-                <p>
-                  Passionate about creating scalable
-                  web applications with modern  technologies and clean code practices.
-                </p>
-              </div>
-              <div>
-                <ul class="flex text-xl font-semibold opacity-80 gap-2 ">
-                  <li class=" w-20 border-[1px] border-gray-500 flex justify-center rounded-2xl hover:bg-[#060f32] hover:text-white">Html</li>
-                  <li class=" w-12 border-[1px] border-gray-500 md:flex justify-center rounded-2xl hover:bg-[#060f32] hover:text-white hidden">Css</li>
-                  <li class=" w-32 border-[1px] border-gray-500 flex justify-center rounded-2xl hover:bg-[#060f32] hover:text-white">JavaScript</li>
-                  <li class=" w-20 border-[1px] border-gray-500 flex justify-center rounded-2xl hover:bg-[#060f32] hover:text-white">Python</li>
-                </ul>
-              </div>
-              <div >
-                <div class="flex gap-8">
-                  <div>
-                    <p class="flex w-40 h-10 bg-blue-500 justify-between items-center px-2 rounded-lg text-slate-200  hover:bg-slate-600 transition duration-700 ease-in-out">
-                      <a href=""><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
-                      <a class="text-xl font-semibold" href="">Portfolio</a>
-                    </p>
-                  </div>
-                  <div class="flex gap-2">
-                    <p class="w-12 h-10 bg-blue-500 flex justify-center items-center rounded-lg text-slate-200 hover:bg-slate-600 transition duration-700 ease-in-out"><a href=""><i class="fa-brands fa-linkedin-in fa-xl"></i></a></p>
-                    <p  class="w-12 h-10 bg-blue-500 flex justify-center items-center rounded-lg text-slate-200 hover:bg-slate-600 transition duration-700 ease-in-out"><a href=""><i class="fa-brands fa-github fa-xl"></i></a></p>
-                  </div>
+            <div class="flex justify-center items-center">
+                <div class="flex h-64 w-64  rounded-full justify-center mt-8 overflow-hidden">
+                    <img class="h-full rounded-full hover:scale-105 duration-1000" src="./images/cynthia.jpg" alt="myBeauty">
                 </div>
-                <div>
-
-                </div>
-              </div>
             </div>
-          </div>
-           <div class="border-[1px] rounded-lg border-slate-100 p-4 group shadow-cyn hover:border-gray-400 hover:scale-105 transition duration-1000 ease-in-out md:px-20 lg:px-4">
-            <div class="flex flex-col gap-2 items-center ">
-              <div class="w-32 h-32 overflow-hidden rounded-full"><img class="rounded-full group-hover:scale-105 transition duration-1000 ease-in-out " src="images/cynthia.jpg" alt=""></div>
-              <p class="text-2xl text-[#060f32] group-hover:text-blue-500 group-hover:scale-110 transition duration-1000 ease-in-out dark:text-white ">Cynthia Umubyeyi</p>
-              <p class="text-xl font-serif group-hover:scale-110 transition duration-1000 ease-in-out ">Frontend developer</p>
-            </div>
-            <div class="flex flex-col items-center gap-4 group-hover:scale-105 transition duration-1000 ease-in-out ">
-              <div class="">
-                <p>
-                  Frontend developer with a keen eye for design and user experience. Loves creating beautiful, accessible interfaces.
-                </p>
-              </div>
-              <div>
-                <ul class="flex text-xl font-semibold opacity-80 gap-2 ">
-                  <li class=" w-20 border-[1px] border-gray-500 flex justify-center rounded-2xl hover:bg-[#060f32] hover:text-white">Html</li>
-                  <li class=" w-12 border-[1px] border-gray-500 md:flex justify-center rounded-2xl hover:bg-[#060f32] hover:text-white hidden">Css</li>
-                  <li class=" w-32 border-[1px] border-gray-500 flex justify-center rounded-2xl hover:bg-[#060f32] hover:text-white">JavaScript</li>
-                  <li class=" w-20 border-[1px] border-gray-500 flex justify-center rounded-2xl hover:bg-[#060f32] hover:text-white">Python</li>
-                </ul>
-              </div>
-              <div >
-                <div class="flex gap-8">
-                  <div>
-                    <p class="flex w-40 h-10 bg-blue-500 justify-between items-center px-2 rounded-lg text-slate-200  hover:bg-slate-600 transition duration-700 ease-in-out">
-                      <a href=""><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
-                      <a class="text-xl font-semibold" href="">Portfolio</a>
-                    </p>
-                  </div>
-                  <div class="flex gap-2">
-                    <p class="w-12 h-10 bg-blue-500 flex justify-center items-center rounded-lg text-slate-200 hover:bg-slate-600 transition duration-700 ease-in-out"><a href=""><i class="fa-brands fa-linkedin-in fa-xl"></i></a></p>
-                    <p  class="w-12 h-10 bg-blue-500 flex justify-center items-center rounded-lg text-slate-200 hover:bg-slate-600 transition duration-700 ease-in-out"><a href=""><i class="fa-brands fa-github fa-xl"></i></a></p>
-                  </div>
-                </div>
-                <div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-           <div class="border-[1px] rounded-lg border-slate-100 p-4 group shadow-cyn hover:border-gray-400 hover:scale-105 transition duration-1000 ease-in-out md:px-20 lg:px-4">
-            <div class="flex flex-col gap-2 items-center ">
-              <div class="w-32 h-32 overflow-hidden rounded-full"><img class="rounded-full h-full group-hover:scale-110 transition duration-1000 ease-in-out " src="images/cep.jpg" alt=""></div>
-              <p class="text-2xl text-[#060f32] group-hover:text-blue-500 group-hover:scale-110 transition duration-1000 ease-in-out dark:text-white">Kenny Bonnheur Niyongabo</p>
-              <p class="text-xl font-serif group-hover:scale-110 transition duration-1000 ease-in-out ">Data Scientist</p>
-            </div>
-            <div class="flex flex-col items-center gap-4 group-hover:scale-105 transition duration-1000 ease-in-out ">
-              <div class="">
-                <p>
-                  Passionate about creating scalable
-                  web applications with modern  technologies and clean code practices.
-                </p>
-              </div>
-              <div>
-                <ul class="flex text-xl font-semibold opacity-80 gap-2 ">
-                  <li class=" w-20 border-[1px] border-gray-500 flex justify-center rounded-2xl hover:bg-[#060f32] hover:text-white">Html</li>
-                  <li class=" w-12 border-[1px] border-gray-500 md:flex justify-center rounded-2xl hover:bg-[#060f32] hover:text-white hidden">Css</li>
-                  <li class=" w-32 border-[1px] border-gray-500 flex justify-center rounded-2xl hover:bg-[#060f32] hover:text-white">Data Science</li>
-                  <li class=" w-20 border-[1px] border-gray-500 flex justify-center rounded-2xl hover:bg-[#060f32] hover:text-white">Python</li>
-                </ul>
-              </div>
-              <div >
-                <div class="flex gap-8">
-                  <div>
-                    <p class="flex w-40 h-10 bg-blue-500 justify-between items-center px-2 rounded-lg text-slate-200  hover:bg-slate-600 transition duration-700 ease-in-out">
-                      <a href=""><i class="fa-solid fa-arrow-up-right-from-square fa-xl"></i></a>
-                      <a class="text-xl font-semibold" href="">Portfolio</a>
-                    </p>
-                  </div>
-                  <div class="flex gap-2">
-                    <p class="w-12 h-10 bg-blue-500 flex justify-center items-center rounded-lg text-slate-200 hover:bg-slate-600 transition duration-700 ease-in-out"><a href=""><i class="fa-brands fa-linkedin-in fa-xl"></i></a></p>
-                    <p  class="w-12 h-10 bg-blue-500 flex justify-center items-center rounded-lg text-slate-200 hover:bg-slate-600 transition duration-700 ease-in-out"><a href=""><i class="fa-brands fa-github fa-xl"></i></a></p>
-                  </div>
-                </div>
-                <div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
-      </section>
-      <!--feedback section-->
-      <section class="mb-12 relative">
-        
-        <div class="mx-12 md:mx-20 flex flex-col gap-2 lg:w-1/2 ">
-          <h1 class="text-3xl font-bold text-[#060f32] text-center dark:text-white">Leave a feedback</h1>
-          <div>
-            <label for="text" class="text-xl font-medium">Name:</label>
-            <input id="name" type="text" placeholder="Enter Your Name" class="w-full border-2 border-blue-700 focus:outline-none focus:border-green-600 rounded-lg pl-4 dark:text-gray-900">
-          </div>
-          <div>
-            <label for="text" class="text-xl font-medium">Email:</label>
-            <input id="email" type="email" placeholder="Enter Your Email" class="w-full border-2 border-blue-700 focus:outline-none focus:border-green-600 rounded-lg pl-4 dark:text-gray-900">
-          </div>
-          <div class="focus:">
-             <label for="text" class="text-xl font-medium">Feedback:</label>
-            <textarea name="feedback" id="feedback" placeholder="Leave your feedback Here" class="border-2 border-blue-700 w-full focus:outline-none focus:border-green-500 rounded-lg pl-4 dark:text-gray-900"></textarea>
-          </div>
-            <div id="submit" class="w-40 h-10 bg-[#060f32] hover:bg-green-900 hover:text-white rounded-full flex justify-center text-slate-200 transition duration-500 ease-in-out hover:scale-105 mx-auto"><button class="text-2xl font-bold">Submit</button></div>
+        <div id="Technologies" class="mt-10 mb-10">
+            <div class="flex flex-col gap-3 text-center mx-4">
+                <p class="text-4xl font-bold text-blue-950">Code & Craft</p>
+                <p class="text-gray-900 text-[20px] dark:text-white">Programming languages and frameworks I currently interact with</p>
+            </div>
+            <div class="lg:grid lg:gap-4 lg:grid-rows-2 lg:grid-cols-2">
+                    <div class="flex flex-col gap-3 mx-8 mt-10 justify-center items-center rounded-2xl hover:-translate-y-2 hover:duration-1000 hover:bg-gray-100  dark:bg-gray-700  dark:shadow-md dark:shadow-gray-50 shadow-lg">
+                        <p class="text-3xl font-bold text-orange-700 mt-6"><i class="fa-brands fa-html5"></i></p>
+                        <p class="text-3xl font-bold text-blue-950">HTML</p>
+                        <p class=" text-center text-gray-600 font-bold mx-2 dark:text-gray-900">HTML is the skeleton of the web, a markup language I use to structure pages.</p>
+                        <p class="mx-4 font-semibold dark:font-serif dark:font-light"><span class="font-bold text-blue-950">Use:</span>I use HTML to build the foundation of web pages, creating semantic structures that make content accessible and ready for design with CSS and interaction with JavaScript.</p>
+                        <p class="mx-4 font-semibold dark:font-serif dark:font-light"><span class="font-bold text-blue-950">Importance:</span>HTML is the universal language of the web. It makes information sharing possible, supports accessibility, and powers education, business, and communication across the world.</p>
+                        <p class="mx-4 font-semibold mb-6 dark:font-serif dark:font-light"><span class="font-bold text-blue-950">Examples:</span>Great websites like Wikipedia, Google, and YouTube all rely on HTML as their starting point.</p>
+                    </div>
+                    <div class="flex flex-col gap-3 mx-8 mt-10 justify-center items-center rounded-2xl hover:-translate-y-2 hover:duration-1000 hover:bg-gray-100 dark:bg-gray-700  dark:shadow-md dark:shadow-gray-50 shadow-lg">
+                        <p class="text-3xl font-bold text-blue-400 mt-6"><i class="fa-brands fa-css3-alt"></i></p>
+                        <p class="text-3xl font-bold text-blue-950">CSS</p>
+                        <p class=" text-center text-gray-600 font-bold mx-2 dark:text-gray-900">CSS is the styling language of the web, used to control layout, colors, fonts, and overall design.</p>
+                        <p class="mx-4 font-semibold dark:font-serif dark:font-light"><span class="font-bold text-blue-950">Use:</span>I use CSS to style structured HTML, making pages responsive, attractive, and user-friendly.</p>
+                        <p class="mx-4 font-semibold dark:font-serif dark:font-light"><span class="font-bold text-blue-950">Importance:</span>CSS separates content from design, ensures accessibility across devices, and brings creativity to the web.</p>
+                        <p class="mx-4 font-semibold mb-6 dark:font-serif dark:font-light"><span class="font-bold text-blue-950">Examples:</span>Websites like Apple, Airbnb, and Dropbox showcase the power of CSS in creating sleek, professional designs.</p>
+                    </div>
+                    <div class="flex flex-col gap-3 mx-8 mt-10 justify-center items-center rounded-2xl hover:-translate-y-2 hover:duration-1000 hover:bg-gray-100 dark:bg-gray-700  dark:shadow-md dark:shadow-gray-50 shadow-lg">
+                        <p class="text-3xl font-bold text-yellow-500 mt-6"><i class="fa-brands fa-square-js"></i></p>
+                        <p class="text-3xl font-bold text-blue-950">JAVASCRIPT</p>
+                        <p class=" text-center text-gray-600 font-bold mx-2 dark:text-gray-900">JavaScript is the programming language of the web, bringing interactivity and logic to static pages.</p>
+                        <p class="mx-4 font-semibold dark:font-serif dark:font-light"><span class="font-bold text-blue-950">Use:</span>I use JavaScript to add functionality—handling events, manipulating the DOM, and building dynamic user experiences.</p>
+                        <p class="mx-4 font-semibold dark:font-serif dark:font-light"><span class="font-bold text-blue-950">Importance:</span>JavaScript powers nearly every interactive feature on the internet, making modern web applications possible.</p>
+                        <p class="mx-4 font-semibold mb-6 dark:font-serif dark:font-light"><span class="font-bold text-blue-950">Examples:</span>Sites like Gmail, Twitter, and Spotify rely on JavaScript for smooth, responsive interactions.</p>
+                    </div>
+                    <div class="flex flex-col gap-3 mx-8 mt-10 justify-center items-center rounded-2xl hover:-translate-y-2 hover:duration-1000 hover:bg-gray-100 dark:bg-gray-700  dark:shadow-md dark:shadow-gray-50 shadow-lg">
+                        <p class="text-3xl font-bold text-orange-700 mt-6"><i class="fa-brands fa-java"></i></p>
+                        <p class="text-3xl font-bold text-blue-950">JAVA</p>
+                        <p class=" text-center text-gray-600 font-bold mx-2 dark:text-gray-900">Java is a versatile, object-oriented programming language widely used in software development.</p>
+                        <p class="mx-4 font-semibold dark:font-serif dark:font-light"><span class="font-bold text-blue-950">Use:</span>I use Java to build applications, practice object-oriented programming, and understand strong typing and portability.</p>
+                        <p class="mx-4 font-semibold dark:font-serif dark:font-light"><span class="font-bold text-blue-950">Importance:</span>Java powers enterprise systems, Android development, and large-scale applications across industries.</p>
+                        <p class="mx-4 font-semibold mb-6 dark:font-serif dark:font-light"><span class="font-bold text-blue-950">Examples:</span>Applications like LinkedIn, Netflix, and even Android apps rely heavily on Java.</p>
+                    </div>
+            </div>
         </div>
-      
-        <div id="response" class="absolute sm:-bottom-52  left-4 right-4 md:left-20  md:right-20 md:-bottom-72  lg:left-[45rem] lg:bottom-0 lg:right-4   text-2xl text-blue-700 rounded-lg"></div>
-      </section>
-      
-    </main>
-    <footer class="bg-slate-300 px-20 md:px-12 pt-8 dark:bg-gray-900">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-20 lg:gap-40">
-        <div class="flex flex-col gap-2 ">
-          <h1 class="text-black font-semibold text-xl text-center dark:text-white">Evariste Nkurunziza</h1>
-          <ul class="text-2xl flex justify-between">
-            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></i></li>
-            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-threads"></i></a></li>
-
-          </ul>
+        <div id="Skills" class="flex flex-col gap-4">
+            <p class="text-3xl font-bold text-center text-blue-950">Additional Skills</p>
+            <div class="flex flex-col gap-4 lg:flex-row lg:justify-center lg:items-center">
+               <div class="flex flex-col gap-2 mx-4 border px-4 py-6 shadow-gray-400 shadow-lg rounded-xl lg:h-72 dark:bg-gray-400 dark:shadow-gray-500 dark:shadow-lg">
+                    <p class="text-2xl text-blue-950 font-semibold">Technical Skills</p>
+                    <ul class="flex flex-col mx-4 text-lg list-disc pl-4">
+                        <li>Web Development</li>
+                        <li>Programming</li>
+                        <li>Interacting with Microsoft</li>
+                    </ul>
+               </div>
+               <div class="flex flex-col gap-2 mx-4 border px-4 py-6 shadow-gray-400 shadow-lg rounded-xl lg:h-72 dark:bg-gray-400 dark:shadow-gray-500 dark:shadow-lg">
+                    <p class="text-2xl text-blue-950 font-semibold">General Skills</p>
+                    <ul class="flex flex-col mx-4 text-lg list-disc pl-4">
+                        <li>Problem-Solving</li>
+                        <li>Teamwork & Collaboration</li>
+                        <li>Communication</li>
+                        <li>Adaptability</li>
+                        <li>Creativity</li>
+                        <li>Time Management</li>
+                    </ul>
+               </div> 
+            </div>
+            <div class="flex gap-5 mt-5 mb-5 justify-center items-center">
+                <p class="text-2xl font-semibold text-blue-950">For more Info:</p>
+                <a href="https://drive.google.com/file/d/14AU1e5OpQoKkFbElqnX_nsBxSxS-HfHh/view" target="_blank" class="border shadow-gray-300 dark:shadow-gray-600 dark:bg-gray-400 hover:bg-blue-950 hover:text-white dark:hover:bg-gray-900 
+                hover:-translate-y-1 duration-500 shadow-xl h-14 w-36 rounded-2xl bg-gray-200 text-blue-950 text-xl font-bold flex justify-center items-center">My CV</a>
+            </div>
         </div>
-        <div class="flex flex-col gap-2 ">
-          <h1 class="text-black font-semibold text-xl text-center dark:text-white">Kenny Bonnheur</h1>
-          <div class="text-2xl flex justify-between">
-            <p><a href=""><i class="fa-brands fa-linkedin"></i></a></p>
-            <p><a href=""><i class="fa-brands fa-instagram"></i></a></p>
-            <p><a href=""><i class="fa-brands fa-x-twitter"></i></a></i></p>
-            <p><a href=""><i class="fa-brands fa-facebook"></i></a></p>
-            <p><a href=""><i class="fa-brands fa-threads"></i></a></p>
-
-          </div>
+        <div id="Hobbies" class="mt-10 mb-5 bg-gray-100 py-5 dark:bg-gray-900 dark:text-white">
+                <p class="text-3xl font-bold text-center text-blue-950 mb-10">HOBBIES</p>
+                <div class="flex flex-col gap-10 lg:grid lg:grid-cols-2 lg:mx-10">
+                    <div class="flex flex-col gap-4 justify-center items-center mx-6 border rounded-3xl py-5 shadow-gray-400 dark:shadow-gray-700  shadow-lg">
+                        <p class=""><i class="fa-solid fa-palette text-8xl text-blue-950"></i></p>
+                        <p class="text-2xl font-semibold text-blue-950">POETRY</p>
+                        <div class="flex flex-col gap-2 mx-10">
+                            <p class="text-2xl font-bold text-blue-950">The Art of Code</p>
+                            <p class="italic font-semibold text-gray-500">"In lines of code a world takes flight,
+                                From empty screens to glowing light.
+                                A canvas built with tags and style,
+                                Turns thoughts to pages that beguile.
+                            </p>
+                            <p class="italic font-semibold text-gray-500">
+                                With scripts that dance and styles that sing,
+                                The web becomes a living thing.
+                                A craft of logic, art, and grace,
+                                Where endless wonders find their place."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 justify-center items-center mx-6 border py-5 rounded-3xl shadow-gray-400 dark:shadow-gray-700  shadow-lg">
+                        <p class=""><i class="fa-solid fa-code text-8xl text-blue-950"></i></p>
+                        <p class="text-2xl font-semibold text-blue-950">CODING</p>
+                        <p class="mx-8 text-gray-600 font-semibold">
+                            Coding as a hobby turns ideas into digital creations.
+                            It is a playground for logic and creativity, where every challenge is a puzzle.
+                            Each line of code is a step toward building something new.
+                        </p>                           
+                    </div>
+                    <div class="flex flex-col gap-4 justify-center items-center mx-6 border py-5 px-4 rounded-3xl shadow-gray-400 dark:shadow-gray-700  shadow-lg lg:col-span-2">
+                        <p class=""><i class="fa-solid fa-music text-8xl text-blue-950"></i></p>
+                        <p class="text-2xl font-semibold text-blue-950">MUSIC</p>
+                        <video class="w-full max-w-lg rounded-lg shadow-lg mx-6" controls>
+                        <source src="./images/FAV ONE.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+                    </div>    
+                </div>
         </div>
-        <div class="flex flex-col gap-2">
-          <h1 class="text-black font-semibold text-xl text-center dark:text-white">Cynthia Umubyeyi</h1>
-          <ul class="text-2xl flex justify-between">
-            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></i></li>
-            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-threads"></i></a></li>
-
-          </ul>
+        <div class="bg-gray-400  h-14 mt-10 lg:mt-52 lg:h-24 lg:py-2">
+            <div class=" flex justify-center items-center">
+                <footer class="flex gap-4 mx-2 justify-between items-center md:gap-12 lg:justify-evenly lg:gap-32">
+                    <div class="flex gap-5 items-center">
+                        <div class=""><i class="fa-solid fa-envelope text-xl lg:text-sm text-blue-950"></i></div>
+                        <div>
+                            <p class="text-blue-950 font-semibold text-xl lg:text-sm">Email</p>
+                            <p class="text-gray-600 text-xl lg:text-sm">umubtnhia@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-5 items-center">
+                        <div class=""><i class="fa-solid fa-phone-volume text-xl lg:text-sm text-blue-950"></i></div>
+                        <div>
+                            <p class="text-blue-950 font-semibold text-xl lg:text-sm">Phone</p>
+                            <p class="text-gray-600 text-xl lg:text-sm">+250791650844</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-5 items-center">
+                        <div class=""><i class="fa-solid fa-location-dot text-xl lg:text-sm text-blue-950"></i></div>
+                        <div>
+                            <p class="text-blue-950 font-semibold text-xl lg:text-sm">Location</p>
+                            <p class="text-gray-600 text-xl lg:text-sm">Kigali, Rwanda</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <div class="hidden lg:flex lg:justify-center lg:items-center lg:mt-5">
+                <p class="text-sm text-gray-500">© 2025 Your Company Name. All rights reserved.</p>
+            </div>  
         </div>
 
-      </div>
-      <div class="text-xl pt-10 pb-10 italic text-center">
-        <p>&copy;2025 All right Reserved</p>
-      </div>
+   </div>
 
-    </footer>
-    
-
-
-    <script type="module" src="/src/main.js"></script>
-  </body>
+   <script type="module" src="/src/main.js"></script> 
+</body>
 </html>
